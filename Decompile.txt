@@ -1,0 +1,22 @@
+How to decompile an android app
+1. Install Apk Exctractor on your android device
+2. Download and install your target app from playstore
+3. Run Apk exctrator to get the apk and send it to your laptop 
+4. Download the Android SDK and Unzip 
+5. Dowload dexjar and unzip
+6. Download JD_GUI and unzip
+7. In Eclipse click File > New > Java Project
+8. Name your project then cick finish
+9. Right click on your project then click Build Path > Configure Build Path
+10. On the Libraries tab, Select Add External Jars, browse to your unzipped dex2jar\libdirectory select all the jar files and then click open
+11. Drag your .apk file into Eclipse project 
+12. Right click on your project, the click Run As>Run Configurations
+13. Right click java application then click new
+14. Set the project to the same name as you did to your project
+15. Set com.google.code.dex2jar.v3.Main as the Main class
+16. On the arguments tab type the name of the .apk file in the Program arguments field
+17. Click run (this will create a new .jar file in your project workspace directory)
+18. Minimize Eclipse and go to your project workspace directory 
+19. Run jd-gui.exe
+20 In jd-gui, click File>open, and point to the .jar file created in your eclipse workspace directory
+21 BOOM!! Source code ayee
